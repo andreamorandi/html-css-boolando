@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    position: relative;
+    width: calc(97% / 3);
+    margin-bottom: 3em;
+}
+
+.card .price{
+    color: red;
+}
+
+.card .price::after{
+    content: " ";
+}
+
+.card .old-price{
+    text-decoration: line-through;
+}
+
+.card img:first-of-type{
+    position: absolute;
+}
+
+.card:hover img:first-of-type{
+    display: none;
+}
