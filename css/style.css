@@ -77,3 +77,37 @@ img{
 .sustainability.double-tag{
     left: 4em;
 }
+
+header{
+    background-color: #ff6900;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+body{
+    margin-top: 7.5em;
+}
+
+.flex-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    color: white;
+}
+
+.flex-header li{
+    display: inline-block;
+    padding-right: 0.3em;
+}
+
+.flex-header img{
+    width: 12%;
+    margin-right: 4em;
+}
+
+.flex-header .actions i{
+    padding-left: 0.5em;
+}
