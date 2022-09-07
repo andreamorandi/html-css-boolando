@@ -33,12 +33,9 @@ img{
     color: red;
 }
 
-.card .price::after{
-    content: " ";
-}
-
 .card .old-price{
     text-decoration: line-through;
+    padding-left: 0.5em;
 }
 
 .card img:first-of-type{
@@ -47,4 +44,36 @@ img{
 
 .card:hover img:first-of-type{
     display: none;
+}
+
+.card .heart{
+    position: absolute;
+    right: 0;
+    top: 0.5em;
+    padding: 0.2em 0.7em;
+    font-size: 1.4rem;
+    background-color: white;
+}
+
+.card .discount{
+    position: absolute;
+    left: 0;
+    bottom: 7.5em;
+    padding: 0.35em 0.8em;
+    font-size: 0.85rem;
+    background-color: red;
+    color: white;
+}
+
+.card .sustainability{
+    position: absolute;
+    bottom: 7.5em;
+    padding: 0.35em 0.8em;
+    font-size: 0.85rem;
+    background-color: green;
+    color: white;
+}
+
+.sustainability.double-tag{
+    left: 4em;
 }
